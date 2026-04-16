@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Kamran Kausher</title>
+    <meta name="description" content="AI, Machine Learning, and Data Science projects by Kamran Kausher. Explore live demos and source code.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/pages/projects.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">KK</span>
+                <span class="logo-text">Kamran<span class="gold">Kausher</span></span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="education.html" class="nav-link">Education</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="certificates.html" class="nav-link">Certificates</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="projects-page">
+        <!-- Hero Section -->
+        <section class="projects-hero parallax-bg">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title animated-gradient">
+                        My <span class="gold">Projects</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        AI-powered systems, data-driven solutions &amp; production-grade applications
+                    </p>
+                </div>
+            </div>
+            <div class="hero-3d-grid" id="hero3dGrid"></div>
+        </section>
+
+        <!-- Filter Bar -->
+        <section class="filter-section">
+            <div class="container">
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-layer-group"></i> All Projects
+                    </button>
+                    <button class="filter-btn" data-filter="ai-ml">
+                        <i class="fas fa-brain"></i> AI/ML
+                    </button>
+                    <button class="filter-btn" data-filter="data-science">
+                        <i class="fas fa-chart-bar"></i> Data Science
+                    </button>
+                    <button class="filter-btn" data-filter="full-stack">
+                        <i class="fas fa-server"></i> Full Stack
+                    </button>
+                    <button class="filter-btn" data-filter="gen-ai">
+                        <i class="fas fa-bolt"></i> GenAI
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="projects-section">
+            <div class="container">
+                <div class="projects-grid">
+                    
+                    <!-- Project 1: Stock Price Prediction Dashboard -->
+                    <div class="project-card stagger-item" data-category="ai-ml data-science full-stack" data-tilt>
+                        <div class="project-card-inner">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                     alt="Stock Price Prediction Dashboard" loading="lazy">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/kamrankausher" target="_blank" class="project-link" title="View Code">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="#" class="project-link" title="Live Demo">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="project-badge">Featured</div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-category-tag">AI/ML · Data Science · Full Stack</div>
+                                <h3>Stock Price Prediction Dashboard</h3>
+                                <p>Built and deployed an end-to-end ML based stock prediction system achieving R² ≈ 0.89, covering data pipeline, feature engineering, and real-time inference. Developed a real-time interactive dashboard using Streamlit and yfinance.</p>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>Scikit-learn</span>
+                                    <span>NumPy</span>
+                                    <span>Pandas</span>
+                                    <span>Streamlit</span>
+                                    <span>yfinance</span>
+                                </div>
+                                <div class="project-stats">
+                                    <div class="proj-stat">
+                                        <i class="fas fa-star gold"></i>
+                                        <span>R² ≈ 0.89</span>
+                                    </div>
+                                    <div class="proj-stat">
+                                        <i class="fas fa-chart-line gold"></i>
+                                        <span>Real-time</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Customer Retention — Multi-Agent AI -->
+                    <div class="project-card stagger-item" data-category="gen-ai ai-ml full-stack" data-tilt>
+                        <div class="project-card-inner">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                     alt="Customer Retention Multi-Agent AI" loading="lazy">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/kamrankausher" target="_blank" class="project-link" title="View Code">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="#" class="project-link" title="Live Demo">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="project-badge">Featured</div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-category-tag">GenAI · Multi-Agent · Full Stack</div>
+                                <h3>Customer Retention — Multi-Agent AI Orchestration</h3>
+                                <p>Engineered an autonomous, multi-agent AI customer retention platform by orchestrating a 5-node LangGraph pipeline with FastAPI, automating risk assessment, policy strategy, and personalized client generation.</p>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>LangGraph</span>
+                                    <span>Groq API</span>
+                                    <span>FastAPI</span>
+                                    <span>XGBoost</span>
+                                    <span>SHAP</span>
+                                    <span>React.js</span>
+                                    <span>Framer Motion</span>
+                                </div>
+                                <div class="project-stats">
+                                    <div class="proj-stat">
+                                        <i class="fas fa-star gold"></i>
+                                        <span>5-Node Pipeline</span>
+                                    </div>
+                                    <div class="proj-stat">
+                                        <i class="fas fa-code-branch gold"></i>
+                                        <span>LLaMA 3.3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: AI Heart Disease Clinical Analyzer -->
+                    <div class="project-card stagger-item" data-category="ai-ml full-stack" data-tilt>
+                        <div class="project-card-inner">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                     alt="AI Heart Disease Clinical Analyzer" loading="lazy">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/kamrankausher" target="_blank" class="project-link" title="View Code">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-category-tag">AI/ML · Healthcare</div>
+                                <h3>AI Heart Disease Clinical Analyzer</h3>
+                                <p>Machine Learning powered web application that predicts the risk of heart disease using clinical parameters and generates a downloadable medical report. Simulates a real clinical decision-support tool used in healthcare environments.</p>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>Scikit-Learn</span>
+                                    <span>Streamlit</span>
+                                </div>
+                                <div class="project-stats">
+                                    <div class="proj-stat">
+                                        <i class="fas fa-heartbeat gold"></i>
+                                        <span>Clinical Tool</span>
+                                    </div>
+                                    <div class="proj-stat">
+                                        <i class="fas fa-file-medical gold"></i>
+                                        <span>PDF Reports</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: AI Customer Retention Intelligence (GenAI) -->
+                    <div class="project-card stagger-item" data-category="gen-ai ai-ml" data-tilt>
+                        <div class="project-card-inner">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                     alt="AI Customer Retention Intelligence" loading="lazy">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/kamrankausher" target="_blank" class="project-link" title="View Code">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-category-tag">GenAI · Explainable AI</div>
+                                <h3>AI Customer Retention Intelligence (GenAI)</h3>
+                                <p>Built a Decision Intelligence ML system to assess customer churn risk and generate explainable retention recommendations, covering 3 risk tiers: LOW, MEDIUM, and HIGH. Integrated SHAP-based Explainable AI for human-readable reasoning.</p>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>Pandas</span>
+                                    <span>NumPy</span>
+                                    <span>Scikit-learn</span>
+                                    <span>SHAP</span>
+                                    <span>FastAPI</span>
+                                    <span>Streamlit</span>
+                                </div>
+                                <div class="project-stats">
+                                    <div class="proj-stat">
+                                        <i class="fas fa-star gold"></i>
+                                        <span>3 Risk Tiers</span>
+                                    </div>
+                                    <div class="proj-stat">
+                                        <i class="fas fa-check-circle gold"></i>
+                                        <span>10+ Scenarios</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Telecom Customer Churn Prediction -->
+                    <div class="project-card stagger-item" data-category="ai-ml data-science" data-tilt>
+                        <div class="project-card-inner">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                     alt="Telecom Churn Prediction" loading="lazy">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/kamrankausher" target="_blank" class="project-link" title="View Code">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-category-tag">AI/ML · Data Science</div>
+                                <h3>Telecom Customer Churn Prediction Pipeline</h3>
+                                <p>Developed an end-to-end ML pipeline to predict telecom customer churn, achieving 80% accuracy and strong ROC-AUC score. Conducted EDA and feature engineering on 7,000+ customer records, identifying key churn drivers.</p>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>Pandas</span>
+                                    <span>Scikit-learn</span>
+                                    <span>Matplotlib</span>
+                                    <span>Seaborn</span>
+                                    <span>FastAPI</span>
+                                    <span>Streamlit</span>
+                                </div>
+                                <div class="project-stats">
+                                    <div class="proj-stat">
+                                        <i class="fas fa-star gold"></i>
+                                        <span>80% Accuracy</span>
+                                    </div>
+                                    <div class="proj-stat">
+                                        <i class="fas fa-database gold"></i>
+                                        <span>7K+ Records</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: CineVerse AI -->
+                    <div class="project-card stagger-item" data-category="ai-ml full-stack" data-tilt>
+                        <div class="project-card-inner">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                     alt="CineVerse AI" loading="lazy">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/kamrankausher" target="_blank" class="project-link" title="View Code">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="#" class="project-link" title="Live Demo">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-category-tag">AI/ML · Full Stack</div>
+                                <h3>CineVerse AI — Movie Recommendation System</h3>
+                                <p>Full-stack movie recommendation system using TF-IDF cosine similarity + TMDB genre discovery. FastAPI backend on Render + Streamlit frontend with scalable content-based filtering pipeline.</p>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>FastAPI</span>
+                                    <span>Streamlit</span>
+                                    <span>Scikit-learn</span>
+                                    <span>TMDB API</span>
+                                    <span>Render</span>
+                                </div>
+                                <div class="project-stats">
+                                    <div class="proj-stat">
+                                        <i class="fas fa-film gold"></i>
+                                        <span>TF-IDF</span>
+                                    </div>
+                                    <div class="proj-stat">
+                                        <i class="fas fa-cloud gold"></i>
+                                        <span>Cloud Deployed</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="project-stats-section">
+            <div class="container">
+                <div class="stats-row">
+                    <div class="stat-card stagger-item">
+                        <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                        <span class="stat-number" data-count="10">0</span>
+                        <span class="stat-label">Total Projects</span>
+                    </div>
+                    <div class="stat-card stagger-item">
+                        <div class="stat-icon"><i class="fas fa-code"></i></div>
+                        <span class="stat-number" data-count="30000">0</span>
+                        <span class="stat-label">Lines of Code</span>
+                    </div>
+                    <div class="stat-card stagger-item">
+                        <div class="stat-icon"><i class="fab fa-github"></i></div>
+                        <span class="stat-number" data-count="200">0</span>
+                        <span class="stat-label">GitHub Commits</span>
+                    </div>
+                    <div class="stat-card stagger-item">
+                        <div class="stat-icon"><i class="fas fa-star"></i></div>
+                        <span class="stat-number" data-count="15">0</span>
+                        <span class="stat-label">Technologies Used</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">KK</span>
+                        <span class="logo-text">Kamran<span class="gold">Kausher</span></span>
+                    </a>
+                    <p class="footer-tagline">
+                        Empowering the future through intelligence and refined engineering
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Explore</h4>
+                        <a href="about.html">About</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="experience.html">Experience</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Connect</h4>
+                        <a href="contact.html">Contact</a>
+                        <a href="https://www.linkedin.com/in/kamran-kausher-7585b0370" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/kamrankausher" target="_blank">GitHub</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <a href="certificates.html">Certificates</a>
+                        <a href="education.html">Education</a>
+                        <a href="skills.html">Skills</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kamran Kausher. All rights reserved.</p>
+                <p>Built with <span class="heart">❤️</span> & cutting-edge tech</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/effects.js"></script>
+    <script src="js/pages/projects.js"></script>
+</body>
+</html>
