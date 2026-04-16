@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | Kamran Kausher</title>
+    <meta name="description"
+        content="Academic journey of Kamran Kausher — B.Tech in Computer Science Engineering from Amity University, specializing in AI/ML and Data Science.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/education.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">KK</span>
+                <span class="logo-text">Kamran<span class="gold">Kausher</span></span>
+            </a>
+
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="education.html" class="nav-link active">Education</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="certificates.html" class="nav-link">Certificates</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="education-page">
+
+        <!-- ═══ Hero Section ═══ -->
+        <section class="edu-hero">
+            <div class="tech-grid"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <canvas id="heroParticles"></canvas>
+
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-graduation-cap"></i>
+                        Academic Journey
+                    </div>
+                    <h1 class="hero-title">
+                        Education &
+                        <span class="animated-gradient-text">Journey</span>
+                    </h1>
+                    <p class="hero-description">
+                        From foundational studies to advanced specialization in AI & Machine Learning — a roadmap of
+                        continuous learning and growth.
+                    </p>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-university"></i></div>
+                        <div class="stat-content">
+                            <span class="number count-up" data-target="4">0</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <span class="label">Years Study</span>
+                        <div class="stat-glow"></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-award"></i></div>
+                        <div class="stat-content">
+                            <span class="number count-up" data-target="12">0</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <span class="label">Certifications</span>
+                        <div class="stat-glow" style="background: var(--accent-purple);"></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-book-open"></i></div>
+                        <div class="stat-content">
+                            <span class="number count-up" data-target="30">0</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <span class="label">Courses</span>
+                        <div class="stat-glow" style="background: var(--accent-teal);"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ Academic Timeline ═══ -->
+        <section class="timeline-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Academic <span class="gold">Timeline</span></h2>
+                    <p>My educational journey from foundations to specialization</p>
+                </div>
+
+                <div class="edu-timeline">
+                    <!-- B.Tech - Current -->
+                    <div class="tl-item current" data-year="2022-2026">
+                        <div class="tl-marker">
+                            <div class="tl-dot">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="tl-line"></div>
+                        </div>
+                        <div class="tl-card">
+                            <div class="tl-card-glow"></div>
+                            <div class="tl-header">
+                                <div class="tl-date">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    2022 — 2026
+                                </div>
+                                <span class="tl-status live">
+                                    <span class="pulse-dot"></span>
+                                    Completed
+                                </span>
+                            </div>
+                            <h3>B.Tech in Computer Science Engineering</h3>
+                            <div class="tl-institution">
+                                <i class="fas fa-university"></i>
+                                <span>Amity University, Jharkhand</span>
+                            </div>
+                            <div class="tl-gpa">
+                                <div class="gpa-ring" data-value="64">
+                                    <svg viewBox="0 0 100 100">
+                                        <circle cx="50" cy="50" r="42" class="gpa-bg"></circle>
+                                        <circle cx="50" cy="50" r="42" class="gpa-fill"></circle>
+                                    </svg>
+                                    <div class="gpa-text">
+                                        <span class="gpa-number">x</span>
+                                        <span class="gpa-max">/10</span>
+                                    </div>
+                                </div>
+                                <div class="gpa-label">CGPA</div>
+                            </div>
+
+                            <div class="tl-details">
+                                <div class="detail-group">
+                                    <h4><i class="fas fa-flask"></i> Specializations</h4>
+                                    <div class="spec-tags">
+                                        <span class="spec-tag ai"><i class="fas fa-brain"></i> AI & Machine
+                                            Learning</span>
+                                        <span class="spec-tag ds"><i class="fas fa-chart-pie"></i> Data Science</span>
+                                        <span class="spec-tag cloud"><i class="fas fa-cloud"></i> Cloud Computing</span>
+                                    </div>
+                                </div>
+                                <div class="detail-group">
+                                    <h4><i class="fas fa-book"></i> Key Coursework</h4>
+                                    <div class="coursework-tags">
+                                        <span>Data Structures & Algorithms</span>
+                                        <span>Database Management</span>
+                                        <span>Operating Systems</span>
+                                        <span>Computer Networks</span>
+                                        <span>Machine Learning</span>
+                                        <span>Deep Learning</span>
+                                        <span>Natural Language Processing</span>
+                                        <span>Cloud Architecture</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Intermediate -->
+                    <div class="tl-item" data-year="2020-2022">
+                        <div class="tl-marker">
+                            <div class="tl-dot">
+                                <i class="fas fa-school"></i>
+                            </div>
+                            <div class="tl-line"></div>
+                        </div>
+                        <div class="tl-card">
+                            <div class="tl-card-glow"></div>
+                            <div class="tl-header">
+                                <div class="tl-date">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    2019 — 2021
+                                </div>
+                                <span class="tl-status completed">
+                                    <i class="fas fa-check-circle"></i>
+                                    Completed
+                                </span>
+                            </div>
+                            <h3>Intermediate (Class XII) — Science</h3>
+                            <div class="tl-institution">
+                                <i class="fas fa-school"></i>
+                                <span>Higher Secondary School</span>
+                            </div>
+                            <div class="tl-gpa">
+                                <div class="gpa-ring" data-value="85">
+                                    <svg viewBox="0 0 100 100">
+                                        <circle cx="50" cy="50" r="42" class="gpa-bg"></circle>
+                                        <circle cx="50" cy="50" r="42" class="gpa-fill"></circle>
+                                    </svg>
+                                    <div class="gpa-text">
+                                        <span class="gpa-number">75</span>
+                                        <span class="gpa-max">%</span>
+                                    </div>
+                                </div>
+                                <div class="gpa-label">Percentage</div>
+                            </div>
+                            <div class="tl-details">
+                                <div class="detail-group">
+                                    <h4><i class="fas fa-star"></i> Highlights</h4>
+                                    <ul class="highlight-list">
+                                        <li><i class="fas fa-chevron-right"></i> Stream: Science (PCM + Computer
+                                            Science)</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Matriculation -->
+                    <div class="tl-item" data-year="2018-2020">
+                        <div class="tl-marker">
+                            <div class="tl-dot">
+                                <i class="fas fa-book-reader"></i>
+                            </div>
+                            <div class="tl-line"></div>
+                        </div>
+                        <div class="tl-card">
+                            <div class="tl-card-glow"></div>
+                            <div class="tl-header">
+                                <div class="tl-date">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    2018 — 2019
+                                </div>
+                                <span class="tl-status completed">
+                                    <i class="fas fa-check-circle"></i>
+                                    Completed
+                                </span>
+                            </div>
+                            <h3>Matriculation (Class X)</h3>
+                            <div class="tl-institution">
+                                <i class="fas fa-school"></i>
+                                <span>Secondary School</span>
+                            </div>
+                            <div class="tl-gpa">
+                                <div class="gpa-ring" data-value="92">
+                                    <svg viewBox="0 0 100 100">
+                                        <circle cx="50" cy="50" r="42" class="gpa-bg"></circle>
+                                        <circle cx="50" cy="50" r="42" class="gpa-fill"></circle>
+                                    </svg>
+                                    <div class="gpa-text">
+                                        <span class="gpa-number">84.8</span>
+                                        <span class="gpa-max">%</span>
+                                    </div>
+                                </div>
+                                <div class="gpa-label">Percentage</div>
+                            </div>
+                            <div class="tl-details">
+                                <div class="detail-group">
+                                    <h4><i class="fas fa-trophy"></i> Achievements</h4>
+                                    <ul class="highlight-list">
+                                        <li><i class="fas fa-chevron-right"></i> First Prize in Essay Writing
+                                            Competition</li>
+
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ Current Coursework ═══ -->
+        <section class="coursework-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Current <span class="gold">Coursework</span></h2>
+                    <p>Advanced subjects I'm actively mastering</p>
+                </div>
+
+                <div class="course-grid">
+                    <div class="course-card">
+                        <div class="course-icon-wrap">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Machine Learning</h3>
+                        <p>Advanced algorithms, model optimization, and real-world deployment</p>
+                        <div class="course-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="85"></div>
+                            </div>
+                            <span class="progress-label">85% Complete</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-icon-wrap">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Neural Networks</h3>
+                        <p>Deep learning architectures with PyTorch & TensorFlow</p>
+                        <div class="course-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="80"></div>
+                            </div>
+                            <span class="progress-label">80% Complete</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-icon-wrap">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Data Science</h3>
+                        <p>Data analysis, visualization, and predictive modeling</p>
+                        <div class="course-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="88"></div>
+                            </div>
+                            <span class="progress-label">88% Complete</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-icon-wrap">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud Computing</h3>
+                        <p>AWS services, distributed systems, and serverless</p>
+                        <div class="course-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="75"></div>
+                            </div>
+                            <span class="progress-label">75% Complete</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-icon-wrap">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Generative AI</h3>
+                        <p>LLMs, prompt engineering, and AI-agent architectures</p>
+                        <div class="course-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="70"></div>
+                            </div>
+                            <span class="progress-label">70% Complete</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-icon-wrap">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Cybersecurity</h3>
+                        <p>Network security, ethical hacking, and cryptography</p>
+                        <div class="course-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="65"></div>
+                            </div>
+                            <span class="progress-label">65% Complete</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ Future Roadmap ═══ -->
+        <section class="roadmap-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Future <span class="gold">Roadmap</span></h2>
+                    <p>My academic and career aspirations ahead</p>
+                </div>
+
+                <div class="roadmap-grid">
+                    <div class="roadmap-card">
+                        <div class="roadmap-year">2025</div>
+                        <div class="roadmap-content">
+                            <h3>Advanced Specialization</h3>
+                            <ul>
+                                <li>Master Generative AI & Large Language Models</li>
+                                <li>Publish research paper in AI/ML</li>
+                                <li>Complete AWS Solutions Architect certification</li>
+                            </ul>
+                        </div>
+                        <div class="roadmap-icon"><i class="fas fa-rocket"></i></div>
+                    </div>
+
+                    <div class="roadmap-card">
+                        <div class="roadmap-year">2026</div>
+                        <div class="roadmap-content">
+                            <h3>Graduation & Industry</h3>
+                            <ul>
+                                <li>Graduate with B.Tech in CSE</li>
+                                <li>Secure AI/ML Engineer position</li>
+                                <li>Contribute to major open-source projects</li>
+                            </ul>
+                        </div>
+                        <div class="roadmap-icon"><i class="fas fa-briefcase"></i></div>
+                    </div>
+
+                    <div class="roadmap-card">
+                        <div class="roadmap-year">2027+</div>
+                        <div class="roadmap-content">
+                            <h3>Graduate Studies & Beyond</h3>
+                            <ul>
+                                <li>Begin Master's / PhD in AI Research</li>
+                                <li>Build production-scale ML systems</li>
+                                <li>Lead AI innovation in industry</li>
+                            </ul>
+                        </div>
+                        <div class="roadmap-icon"><i class="fas fa-atom"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <a href="index.html" class="logo">
+                            <span class="logo-icon">KK</span>
+                            <span class="logo-text">Kamran<span class="gold">Kausher</span></span>
+                        </a>
+                        <p class="footer-tagline">
+                            Transforming data into intelligence, one model at a time
+                        </p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="link-group">
+                            <h4>Explore</h4>
+                            <a href="about.html">About</a>
+                            <a href="projects.html">Projects</a>
+                            <a href="experience.html">Experience</a>
+                        </div>
+                        <div class="link-group">
+                            <h4>Connect</h4>
+                            <a href="contact.html">Contact</a>
+                            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                            <a href="https://github.com" target="_blank">GitHub</a>
+                        </div>
+                        <div class="link-group">
+                            <h4>Resources</h4>
+                            <a href="certificates.html">Certificates</a>
+                            <a href="education.html">Education</a>
+                            <a href="skills.html">Skills</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Kamran Kausher. All rights reserved.</p>
+                    <p>Built with <span class="heart">❤️</span> & cutting-edge tech</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/effects.js"></script>
+    <script src="js/pages/education.js"></script>
+</body>
+
+</html>
