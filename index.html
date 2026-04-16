@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamran Kausher | AI & Data Science Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Kamran Kausher — AI Engineer & Data Scientist building intelligent systems that transform data into decisions.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">KK</span>
+                <span class="logo-text">Kamran<span class="gold">Kausher</span></span>
+            </a>
+
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="education.html" class="nav-link">Education</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="certificates.html" class="nav-link">Certificates</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ═══════ Hero Section ═══════ -->
+        <section class="home-hero" id="hero">
+            <!-- Background layers -->
+            <div class="hero-grid-overlay"></div>
+            <canvas id="heroCanvas"></canvas>
+            <div class="hero-orbs">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+            </div>
+
+            <div class="hero-inner">
+                <!-- Left — Text -->
+                <div class="hero-text-col" id="heroTextCol">
+                    <div class="hero-greeting-badge" style="opacity:0; transform:translateY(20px)">
+                        <span class="greeting-dot"></span>
+                        Available for Opportunities
+                    </div>
+
+                    <h1 class="hero-main-title" style="opacity:0; transform:translateY(20px)">
+                        I Build<br>
+                        <span class="typed-role" id="typedRole"></span>
+                    </h1>
+
+                    <p class="hero-desc" style="opacity:0; transform:translateY(20px)">
+                        From multi-agent AI orchestration to production ML pipelines — I transform raw data into
+                        powerful, intelligent systems that drive real-world impact.
+                    </p>
+
+                    <div class="hero-cta-row" style="opacity:0; transform:translateY(20px)">
+                        <a href="projects.html" class="btn btn-primary btn-glow"><i class="fas fa-rocket"></i> View My
+                            Work</a>
+                        <a href="contact.html" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Get In
+                            Touch</a>
+                    </div>
+
+                    <div class="hero-socials" style="opacity:0; transform:translateY(20px)">
+                        <a href="https://github.com/kamrankausher" target="_blank" class="social-icon github"
+                            aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kamran-kausher-7585b0370" target="_blank"
+                            class="social-icon linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:kamrankausher@gmail.com" class="social-icon email" aria-label="Email"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+
+                    <div class="hero-stats-row" style="opacity:0; transform:translateY(20px)">
+                        <div class="h-stat">
+                            <div class="h-stat-num count-up" data-target="6" data-suffix="+">0</div>
+                            <div class="h-stat-label">Projects</div>
+                        </div>
+                        <div class="h-stat">
+                            <div class="h-stat-num count-up" data-target="2" data-suffix="+">0</div>
+                            <div class="h-stat-label">Internships</div>
+                        </div>
+                        <div class="h-stat">
+                            <div class="h-stat-num count-up" data-target="12" data-suffix="+">0</div>
+                            <div class="h-stat-label">Certifications</div>
+                        </div>
+                        <div class="h-stat">
+                            <div class="h-stat-num count-up" data-target="10" data-suffix="+">0</div>
+                            <div class="h-stat-label">Tech Skills</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right — Visual -->
+                <div class="hero-visual-col">
+                    <div class="central-orb"></div>
+                    <div class="orbit">
+                        <div class="orbit-pip"></div>
+                    </div>
+                    <div class="orbit">
+                        <div class="orbit-pip"></div>
+                    </div>
+                    <div class="orbit">
+                        <div class="orbit-pip"></div>
+                    </div>
+
+                    <div class="floating-icons">
+                        <div class="fl-icon"><i class="fab fa-python"></i></div>
+                        <div class="fl-icon"><i class="fas fa-brain"></i></div>
+                        <div class="fl-icon"><i class="fas fa-database"></i></div>
+                        <div class="fl-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="fl-icon"><i class="fas fa-code"></i></div>
+                        <div class="fl-icon"><i class="fas fa-cloud"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-hint">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span class="scroll-label">Explore</span>
+            </div>
+        </section>
+
+        <!-- ═══════ Tech Stack Marquee ═══════ -->
+        <section class="tech-marquee-section">
+            <div class="marquee-track" id="marqueeTrack">
+                <div class="marquee-item"><i class="fab fa-python"></i> Python</div>
+                <div class="marquee-item"><i class="fas fa-brain"></i> TensorFlow</div>
+                <div class="marquee-item"><i class="fas fa-robot"></i> LangChain</div>
+                <div class="marquee-item"><i class="fas fa-bolt"></i> FastAPI</div>
+                <div class="marquee-item"><i class="fas fa-database"></i> PostgreSQL</div>
+                <div class="marquee-item"><i class="fas fa-chart-bar"></i> Pandas</div>
+                <div class="marquee-item"><i class="fas fa-fire"></i> PyTorch</div>
+                <div class="marquee-item"><i class="fab fa-docker"></i> Docker</div>
+                <div class="marquee-item"><i class="fab fa-aws"></i> AWS</div>
+                <div class="marquee-item"><i class="fas fa-project-diagram"></i> Scikit-Learn</div>
+                <div class="marquee-item"><i class="fas fa-cubes"></i> NumPy</div>
+                <div class="marquee-item"><i class="fab fa-git-alt"></i> Git</div>
+                <div class="marquee-item"><i class="fas fa-cogs"></i> CrewAI</div>
+                <div class="marquee-item"><i class="fas fa-eye"></i> OpenCV</div>
+                <!-- Duplicated for seamless loop -->
+                <div class="marquee-item"><i class="fab fa-python"></i> Python</div>
+                <div class="marquee-item"><i class="fas fa-brain"></i> TensorFlow</div>
+                <div class="marquee-item"><i class="fas fa-robot"></i> LangChain</div>
+                <div class="marquee-item"><i class="fas fa-bolt"></i> FastAPI</div>
+                <div class="marquee-item"><i class="fas fa-database"></i> PostgreSQL</div>
+                <div class="marquee-item"><i class="fas fa-chart-bar"></i> Pandas</div>
+                <div class="marquee-item"><i class="fas fa-fire"></i> PyTorch</div>
+                <div class="marquee-item"><i class="fab fa-docker"></i> Docker</div>
+                <div class="marquee-item"><i class="fab fa-aws"></i> AWS</div>
+                <div class="marquee-item"><i class="fas fa-project-diagram"></i> Scikit-Learn</div>
+                <div class="marquee-item"><i class="fas fa-cubes"></i> NumPy</div>
+                <div class="marquee-item"><i class="fab fa-git-alt"></i> Git</div>
+                <div class="marquee-item"><i class="fas fa-cogs"></i> CrewAI</div>
+                <div class="marquee-item"><i class="fas fa-eye"></i> OpenCV</div>
+            </div>
+        </section>
+
+        <!-- ═══════ Featured Projects ═══════ -->
+        <section class="featured-section" id="featured">
+            <div class="section-header reveal">
+                <h2>Featured <span class="gold">Projects</span></h2>
+                <p>Real-world AI systems, from concept to production deployment</p>
+            </div>
+
+            <div class="featured-grid">
+                <a href="projects.html" class="featured-card reveal" style="transition-delay:0.1s">
+                    <div class="fc-image">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <div class="fc-body">
+                        <div class="fc-tags">
+                            <span class="fc-tag">CrewAI</span>
+                            <span class="fc-tag">LangChain</span>
+                            <span class="fc-tag">FastAPI</span>
+                        </div>
+                        <h3>Multi-Agent AI System</h3>
+                        <p>An intelligent orchestration platform where specialized AI agents collaborate autonomously to
+                            solve complex tasks using CrewAI framework.</p>
+                        <div class="fc-footer">
+                            <span class="fc-link">View Project <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="projects.html" class="featured-card reveal" style="transition-delay:0.2s">
+                    <div class="fc-image"
+                        style="background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(76, 175, 80, 0.2));">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="fc-body">
+                        <div class="fc-tags">
+                            <span class="fc-tag">ML Pipeline</span>
+                            <span class="fc-tag">Scikit-Learn</span>
+                            <span class="fc-tag">EDA</span>
+                        </div>
+                        <h3>Predictive Analytics Engine</h3>
+                        <p>End-to-end ML pipeline for predictive analytics with automated feature engineering, model
+                            selection, and real-time dashboards.</p>
+                        <div class="fc-footer">
+                            <span class="fc-link">View Project <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="projects.html" class="featured-card reveal" style="transition-delay:0.3s">
+                    <div class="fc-image"
+                        style="background: linear-gradient(135deg, rgba(255, 107, 53, 0.2), rgba(255, 71, 87, 0.2));">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div class="fc-body">
+                        <div class="fc-tags">
+                            <span class="fc-tag">NLP</span>
+                            <span class="fc-tag">Transformers</span>
+                            <span class="fc-tag">RAG</span>
+                        </div>
+                        <h3>NLP & RAG Application</h3>
+                        <p>Retrieval-Augmented Generation system for intelligent document Q&A, leveraging embedding
+                            models and vector databases for accurate results.</p>
+                        <div class="fc-footer">
+                            <span class="fc-link">View Project <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ═══════ Resume Download ═══════ -->
+        <section class="resume-section" id="resume">
+            <div class="resume-datapad reveal-scale">
+                <div class="dp-glare"></div>
+                <div class="dp-border-glow"></div>
+
+                <div class="dp-inner">
+                    <!-- Left: Holographic Visualizer -->
+                    <div class="dp-holo">
+                        <div class="holo-grid"></div>
+                        <div class="holo-scanline"></div>
+                        <div class="holo-sphere"></div>
+                        <div class="holo-icon-wrapper">
+                            <i class="fas fa-file-pdf holo-doc"></i>
+                        </div>
+                        <div class="holo-data">
+                            <span class="hd-title">Kamran_Kausher.pdf</span>
+                            <span class="hd-status"><i class="fas fa-shield-alt"></i> SECURE_DL</span>
+                        </div>
+                        <div class="holo-particles">
+                            <div class="hp hp-1"></div>
+                            <div class="hp hp-2"></div>
+                            <div class="hp hp-3"></div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Datapad Info -->
+                    <div class="dp-info">
+                        <div class="dp-header">
+                            <div class="dp-badge">
+                                <span class="pulse-dot"></span> SYSTEM ACCESS GRANTED
+                            </div>
+                            <h2 class="dp-title">Initialize <span class="gold">Resume.exe</span></h2>
+                            <p class="dp-desc">Acquire complete documentation of my technical architecture, machine
+                                learning models, and complex full-stack implementations.</p>
+                        </div>
+
+                        <div class="dp-stats">
+                            <div class="dp-stat">
+                                <span class="ds-val">Fresher<span class="ds-plus"></span></span>
+                                <span class="ds-label">Years Exp</span>
+                            </div>
+                            <div class="dp-stat">
+                                <span class="ds-val">5<span class="ds-plus">+</span></span>
+                                <span class="ds-label">Deployments</span>
+                            </div>
+                            <div class="dp-stat">
+                                <span class="ds-val">300<span class="ds-plus">+</span></span>
+                                <span class="ds-label">Commits</span>
+                            </div>
+                        </div>
+
+                        <div class="dp-action">
+                            <a href="assets/resume/Kamran_Kausher_Data_Scientist_Resume.pdf" download class="btn-cyber">
+                                <span class="bc-glare"></span>
+                                <span class="bc-content">
+                                    <i class="fas fa-download"></i>
+                                    <div class="bc-text">
+                                        <strong>DOWNLOAD RESUME</strong>
+                                        <small>PDF FILE </small>
+                                    </div>
+                                </span>
+                            </a>
+                            <a href="contact.html" class="dp-contact">
+                                <i class="fas fa-envelope"></i> Connect
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════ Explore Portfolio ═══════ -->
+        <section class="explore-section" id="explore">
+            <div class="section-header reveal">
+                <h2>Explore <span class="gold">My Portfolio</span></h2>
+                <p>Discover my journey across AI, Machine Learning & Data Science</p>
+            </div>
+
+            <div class="explore-grid">
+                <a href="about.html" class="explore-card reveal" style="transition-delay:0.1s">
+                    <div class="ec-icon"><i class="fas fa-user-astronaut"></i></div>
+                    <h3>About Me</h3>
+                    <p>My story, vision & what drives me to push boundaries in AI</p>
+                </a>
+
+                <a href="skills.html" class="explore-card reveal" style="transition-delay:0.15s">
+                    <div class="ec-icon"><i class="fas fa-code"></i></div>
+                    <h3>Tech Stack</h3>
+                    <p>Python, TensorFlow, LangChain, FastAPI & 10+ cutting-edge tools</p>
+                </a>
+
+                <a href="experience.html" class="explore-card reveal" style="transition-delay:0.2s">
+                    <div class="ec-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Experience</h3>
+                    <p>Real-world ML internships & industry deployments</p>
+                </a>
+
+                <a href="education.html" class="explore-card reveal" style="transition-delay:0.25s">
+                    <div class="ec-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Education</h3>
+                    <p>B.Tech in Computer Science and Engineering with hands-on project work</p>
+                </a>
+
+                <a href="certificates.html" class="explore-card reveal" style="transition-delay:0.3s">
+                    <div class="ec-icon"><i class="fas fa-award"></i></div>
+                    <h3>Certifications</h3>
+                    <p>12+ verified professional credentials & achievements</p>
+                </a>
+
+                <a href="contact.html" class="explore-card reveal" style="transition-delay:0.35s">
+                    <div class="ec-icon"><i class="fas fa-paper-plane"></i></div>
+                    <h3>Contact</h3>
+                    <p>Let's collaborate on something amazing together</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">KK</span>
+                        <span class="logo-text">Kamran<span class="gold">Kausher</span></span>
+                    </a>
+                    <p class="footer-tagline">
+                        Empowering the future through intelligence and refined engineering
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Explore</h4>
+                        <a href="about.html">About</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="experience.html">Experience</a>
+                    </div>
+
+                    <div class="link-group">
+                        <h4>Connect</h4>
+                        <a href="contact.html">Contact</a>
+                        <a href="https://www.linkedin.com/in/kamran-kausher-7585b0370" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/kamrankausher" target="_blank">GitHub</a>
+                    </div>
+
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <a href="certificates.html">Certificates</a>
+                        <a href="education.html">Education</a>
+                        <a href="skills.html">Skills</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kamran Kausher. All rights reserved.</p>
+                <p>Built with <span class="heart">❤️</span> & cutting-edge tech</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/effects.js"></script>
+    <script src="js/pages/home.js"></script>
+</body>
+
+</html>
